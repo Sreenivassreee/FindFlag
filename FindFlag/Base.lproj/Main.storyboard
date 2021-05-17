@@ -41,15 +41,15 @@
                                             <action selector="BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U7w-0p-2N0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GU8-fd-BCb">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bP-gP-jLb">
                                         <rect key="frame" x="0.0" y="300" width="200" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="100" id="Ilo-PK-hkX"/>
-                                            <constraint firstAttribute="width" constant="200" id="q30-mP-jpv"/>
+                                            <constraint firstAttribute="height" constant="100" id="3Zs-Y2-icV"/>
+                                            <constraint firstAttribute="width" constant="200" id="XgO-N3-YLA"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="monaco"/>
+                                        <state key="normal" image="germany"/>
                                         <connections>
-                                            <action selector="BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrY-09-vTJ"/>
+                                            <action selector="BtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F14-uc-YNh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -66,7 +66,7 @@
                     <connections>
                         <outlet property="image0" destination="Nic-pp-Isa" id="uZ8-uE-QEQ"/>
                         <outlet property="image1" destination="ilz-iq-Z9I" id="3lV-jv-2hM"/>
-                        <outlet property="image2" destination="GU8-fd-BCb" id="KPk-7l-jk3"/>
+                        <outlet property="image2" destination="7bP-gP-jLb" id="yOk-rW-rbl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -95,7 +95,6 @@
     <resources>
         <image name="estonia" width="200" height="100"/>
         <image name="germany" width="200" height="100"/>
-        <image name="monaco" width="200" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
