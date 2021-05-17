@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var answer = ""
     var status = ""
     var ran = 0
+    var counter = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         countries.append("estonia")
@@ -32,7 +33,9 @@ class ViewController: UIViewController {
         
         
         startGame()
-        
+        image0.layer.borderWidth=1.0
+        image1.layer.borderWidth=1.0
+        image2.layer.borderWidth=1.0
         
     }
     @IBOutlet weak var image0: UIButton!
@@ -51,7 +54,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func BtnPressed(_ sender: UIButton) {
-       
+        counter+=1
         print(sender.tag)
         print(ran)
         if ran == sender.tag{
@@ -62,9 +65,18 @@ class ViewController: UIViewController {
             status = "Wrong"
             score-=1
         }
+        if counter == 10{
+            var ar = UIAlertController(title:status , message: "Your score is \(score) and Game Completed ", preferredStyle: .alert)
+            ar.addAction(UIAlertAction(title: "Reset", style: .default, handler: startGame))
+            present(ar, animated: true)
+            score=0
+            counter=0
+        }else{
         var ar = UIAlertController(title:status , message: "Your score is \(score)", preferredStyle: .alert)
         ar.addAction(UIAlertAction(title: "Continue", style: .default, handler: startGame))
-        present(ar, animated: true)
+            present(ar, animated: true)
+        }
+        
     }
 }
 
