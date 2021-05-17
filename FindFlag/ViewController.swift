@@ -8,12 +8,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
+    var countries = [String]()
+    var score  = 0
+    var answer = ""
+   
 
 }
 
