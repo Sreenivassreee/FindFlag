@@ -28,10 +28,6 @@ class ViewController: UIViewController {
         countries.append("spain")
         countries.append("uk")
         countries.append("us")
-        
-        
-        
-        
         startGame()
         image0.layer.borderWidth=1.0
         image1.layer.borderWidth=1.0
